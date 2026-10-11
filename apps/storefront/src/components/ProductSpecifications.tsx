@@ -1,0 +1,6 @@
+import type { Product } from "../../../../packages/shared/src/types/product";
+import { money } from "../../../../packages/shared/src/mocks/products";
+export function ProductSpecifications({ product }: { product: Product }) {
+    const facts = [["Product", product.name], ["Category", product.category], ["Battery life", `${product.battery} hours`], ["Active noise cancellation", product.anc ? "Included" : "Not included"], ["Featured finish", product.color], ["Demo price", money(product.price)]];
+    return <section className="pdp-specifications" id="product-specifications"><div><div className="eyebrow">THE DETAILS THAT MATTER</div><h2>Beautiful outside.<br /><em>Considered inside.</em></h2><p>A closer look at your next listening companion.</p></div><dl>{facts.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl><div className="pdp-faq"><details><summary>Can I try the shopping flow?</summary><p>Yes. Add this product to your bag and complete the mock checkout. No payment is collected and no actual order is placed.</p></details><details><summary>How does the sound guide work?</summary><p>Enable the sound guide, then linger on the product image or select the arrow beside the guide invitation. Local AI introduces the product and Kokoro reads the details aloud.</p></details></div></section>;
+}
