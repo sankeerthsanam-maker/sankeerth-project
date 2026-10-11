@@ -1,0 +1,4 @@
+import {useState,useEffect} from 'react';
+import type {CartItem} from '../../../../shared/src/types/product';
+export function useCart(){const [items,setItems]=useState<CartItem[]>(()=>{try{const data=JSON.parse(localStorage.getItem('sankee-cart')||'[]');return Array.isArray(data)?data.filter(i=>typeof i.productId==='string'&&Number.isInteger(i.quantity)&&i.quantity>0):[]}catch{return []}});useEffect(()=>{try{localStorage.setItem('sankee-cart',JSON.stringify(items))}catch{}},[items]);function add(id:string){setItems(current=>current.some(i=>i.productId===id)?current.map(i=>i.productId===id?{...i,quantity:i.quantity+1}:i):[...current,{productId:id,quantity:1}])}function change(id:string,delta:number){setItems(current=>current.map(i=>i.productId===id?{...i,quantity:i.quantity+delta}:i).filter(i=>i.quantity>0))}return {items,add,change,clear:()=>setItems([]),count:items.reduce((n,i)=>n+i.quantity,0)}}
+export type Cart = ReturnType<typeof useCart>;

@@ -1,0 +1,157 @@
+{
+  "provenance": "Mock catalogue features come from shared products.ts. Suggested use cases and considerations are editorial guidance, not tested performance claims. Unknown specifications must never be invented.",
+  "products": {
+    "halo": {
+      "features": [
+        "Over-ear design",
+        "Adaptive noise cancellation",
+        "40-hour listed battery life"
+      ],
+      "suggestedUseCases": [
+        "Private listening",
+        "Focus in noisy surroundings",
+        "Travel when noise cancellation matters"
+      ],
+      "considerations": [
+        "Over-ear format is less pocketable than earbuds",
+        "Splash resistance is not documented"
+      ],
+      "unknownSpecifications": [
+        "Mac compatibility",
+        "Bluetooth version",
+        "Microphone quality",
+        "Weight",
+        "IP rating",
+        "Charging time",
+        "Connection types",
+        "Bluetooth connectivity"
+      ]
+    },
+    "air": {
+      "features": [
+        "Lightweight earbuds",
+        "Wireless charging case",
+        "Noise cancellation",
+        "24-hour listed battery life"
+      ],
+      "suggestedUseCases": [
+        "Everyday portable listening",
+        "Customers wanting earbuds with noise cancellation"
+      ],
+      "considerations": [
+        "Earbud comfort depends on individual fit",
+        "Secure sports fit and splash resistance are not documented"
+      ],
+      "unknownSpecifications": [
+        "Mac compatibility",
+        "Bluetooth version",
+        "Microphone quality",
+        "IP rating",
+        "Charging time",
+        "Whether the listed battery includes the case",
+        "Connection types",
+        "Bluetooth connectivity"
+      ]
+    },
+    "pulse": {
+      "features": [
+        "Portable speaker",
+        "12-hour listed battery life",
+        "No active noise cancellation"
+      ],
+      "suggestedUseCases": [
+        "Shared listening",
+        "Workspaces and weekends"
+      ],
+      "considerations": [
+        "A speaker plays into the room rather than providing private earbud listening",
+        "Water resistance is not documented"
+      ],
+      "unknownSpecifications": [
+        "Mac compatibility",
+        "Connection types",
+        "Microphone",
+        "Weight",
+        "IP rating",
+        "Charging time",
+        "Bluetooth connectivity"
+      ]
+    },
+    "form": {
+      "features": [
+        "Premium drivers",
+        "Plush cushions",
+        "Noise cancellation",
+        "50-hour listed battery life"
+      ],
+      "suggestedUseCases": [
+        "Detailed music listening",
+        "Customers prioritising cushioning and listed battery duration"
+      ],
+      "considerations": [
+        "Highest demo price in this catalogue",
+        "Plush cushions do not guarantee comfort for every person"
+      ],
+      "unknownSpecifications": [
+        "Mac compatibility",
+        "Bluetooth version",
+        "Microphone quality",
+        "Weight",
+        "IP rating",
+        "Charging time",
+        "Connection types",
+        "Bluetooth connectivity"
+      ]
+    },
+    "air-sport": {
+      "features": [
+        "Secure fit",
+        "Splash-resistant finish",
+        "18-hour listed battery life",
+        "No active noise cancellation"
+      ],
+      "suggestedUseCases": [
+        "Exercise and movement",
+        "Customers wanting earbuds without ANC"
+      ],
+      "considerations": [
+        "Splash resistance does not establish a waterproof or swimming rating",
+        "Fit is individual"
+      ],
+      "unknownSpecifications": [
+        "Mac compatibility",
+        "Bluetooth version",
+        "Microphone quality",
+        "Exact IP rating",
+        "Charging time",
+        "Connection types",
+        "Bluetooth connectivity"
+      ]
+    },
+    "room": {
+      "features": [
+        "Compact home speaker",
+        "Warm expansive audio description",
+        "16-hour listed battery life",
+        "No active noise cancellation"
+      ],
+      "suggestedUseCases": [
+        "Shared home listening",
+        "Customers preferring a speaker in their room"
+      ],
+      "considerations": [
+        "A room speaker does not provide private headphone listening",
+        "Water resistance is not documented"
+      ],
+      "unknownSpecifications": [
+        "Mac compatibility",
+        "Connection types",
+        "Microphone",
+        "Dimensions",
+        "IP rating",
+        "Charging time",
+        "Bluetooth connectivity"
+      ]
+    }
+  }
+}
